@@ -2,7 +2,6 @@ streamlit
 torch
 transformers
 tqdm
-logging
 time
 flask
 sys
