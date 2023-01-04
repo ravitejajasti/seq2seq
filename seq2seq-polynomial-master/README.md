@@ -1,4 +1,7 @@
 # Seq2Seq - Polynomial Expansion
+
+Uses Repo from [Jaymody](https://github.com/jaymody/seq2seq-polynomial) and [Concepts from Jalammar](https://jalammar.github.io/illustrated-transformer/)
+
 This repo contains an implementation of a seq2seq [transformer](https://arxiv.org/abs/1706.03762) using PyTorch Lightning. The implementation is heavily borrowed from [bentrevett/pytorch-seq2seq](https://github.com/bentrevett/pytorch-seq2seq/blob/master/6%20-%20Attention%20is%20All%20You%20Need.ipynb), with a few key differences:
 - This repo tests the model against a toy dataset of polynomial expansions (see `expand.md` or `The Problem` section below), rather than english to german translation
 - Instead of using `torchtext`, I've implemented my own in-house text to tensor processing
