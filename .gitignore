@@ -9,6 +9,5 @@ __*
 # #ignore all files
 models/best/model*
 seq2seq-polynomial-master/models/best/model-v*
-/st.py
 
 # trying to negate a file inside an ignored directory won't work
