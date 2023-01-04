@@ -4,12 +4,13 @@ import sys
 import streamlit as st
 import logging
 import time
+import os
 # appending the directory of mod.py
 # in the sys.path list
-sys.path.append('/Users/ravitejajasti/Library/CloudStorage/OneDrive-TheUniversityofTexasatDallas/Academic/Sem 4/NLP/seq2seq-polynomial-master-scale-ai/seq2seq-polynomial-master')
+sys.path.append(os.getcwd() + '/seq2seq-polynomial-master')
 
 from flask import Flask,  request, render_template
-from train import evaluate, load_model
+from train import load_model
 from tqdm import tqdm
 
 # Configure logger
