@@ -1,0 +1,14 @@
+# # ignore all directories with the name test
+owned/*
+models/*
+seq2seq-polynomial-master/data/
+seq2seq-polynomial-master/models/best/lightning_logs/*/
+seq2seq-polynomial-master/.gitignore
+.vscode/
+__*
+# #ignore all files
+models/best/model*
+seq2seq-polynomial-master/models/best/model-v*
+/st.py
+
+# trying to negate a file inside an ignored directory won't work

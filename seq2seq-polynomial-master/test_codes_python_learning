@@ -1,0 +1,13 @@
+def sentence_to_words(sentence):
+    print('HI')
+    raise NotImplementedError()
+
+def words_to_sentence(words):
+    print('HI')
+    raise NotImplementedError()
+
+def add_sentence(sentence):
+    print('HIsss')
+    sentence_to_words(sentence)
+print('hellllolllll')
+add_sentence("Hello Testing Dear")
