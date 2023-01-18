@@ -27,9 +27,11 @@ class Collater:
         # TODO: try pack_padded_sequence for faster processing
         if self.predict:
             # batch = src_tensors in predict mode
+            # x_seq = [[5, 18, 29], [32, 100], [699, 6, 9, 17]]
             return nn.utils.rnn.pad_sequence(
                 batch, batch_first=True, padding_value=self.src_lang.PAD_idx
             )
+            # x_padded = [[5, 18, 29, 0], [32, 100, 0, 0], [699, 6, 9, 17]]   
 
         src_tensors, trg_tensors = zip(*batch)
         src_tensors = nn.utils.rnn.pad_sequence(
