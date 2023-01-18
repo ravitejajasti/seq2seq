@@ -20,7 +20,10 @@ logging.basicConfig(format="\n%(asctime)s\n%(message)s", level=logging.INFO, for
 model = load_model('seq2seq-polynomial-master/models/best')
 
 st.title("Solve the Complex Polynomial")
-src = st.text_input("Enter the Polynomial Expression", "2*(x+2)")
+value = "(4-x)*(x+12)"
+src = st.text_input("Enter the Polynomial Expression", value)
+st.info('Some common expressions to use are (t+20)*(t-12), y**2, x*(x-22)', icon="ℹ️")
+
 
 
 
@@ -63,7 +66,10 @@ def predict():
     prd = eval(model, pairs)
     return st.success(f'The simplied version is {prd[0]}', icon="✅")
 
-st.button("Simplify!!", on_click=predict)
+btn = st.button("Simplify!!")
+if btn:
+    st.balloons()
+    predict()
 
 # @app.route("/")
 # def hello():
