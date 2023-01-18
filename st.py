@@ -68,7 +68,7 @@ def predict():
 
 btn = st.button("Simplify!!")
 if btn:
-    st.balloons()
+    st.snow()
     predict()
 
 # @app.route("/")
